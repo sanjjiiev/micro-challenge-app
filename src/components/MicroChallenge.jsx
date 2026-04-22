@@ -110,7 +110,7 @@ export default function MicroChallenge() {
         setError('');
 
         try {
-            const response = await fetch('http://localhost:5000/api/submit-assessment', {
+            const response = await fetch('https://micro-challenge-backend.onrender.com/api/submit-assessment', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ email, score, totalQuestions: quizQuestions.length })
